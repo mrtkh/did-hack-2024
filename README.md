@@ -93,6 +93,10 @@ This leaks unnecessary student information, as the service only needs to verify 
 4. Students select their student card VC with with the Issuer’s hidden signature and send it through the established session
 5. The display machine verifies the student card VC's hidden signature using zero-knowledge proofs and checks if the Issuer's corresponding public key is included in the trusted university list. If verified, students receive the discount and the parking block lowers for demonstration purposes; if not, the discount is denied and the parking block remains in place.
 
+
+<img width="746" alt="CleanShot 2024-11-05 at 01 57 59@2x" src="https://github.com/user-attachments/assets/1e8728c9-1e66-4dde-acdb-32ac3b4085dc">
+
+
 ## Use Case 2: Accessing Academic Paper Search Systems while Hiding University Affiliation
 
 In our second demonstration, we show how students can access academic paper search systems while hiding their university affiliation. In this scenario, universities (Issuers) issue student IDs as Verifiable Credentials to their students (Holders). While paper search websites typically allow university students free access to academic papers, students don't need to reveal which university they attend. They are only required to prove their status as "university students." The process works as follows:
