@@ -7,6 +7,7 @@
 - Demonstrations
 - Use Case 1: Student Access to Rental Car Service with Parking Block Control
 - Use Case 2: Accessing Academic Paper Search Systems while Hiding University Affiliation
+- VC Format for Issuer Hiding
 - Tech stuff and references
 - Tech resources we created
 
@@ -103,6 +104,12 @@ In our second demonstration, we show how students can access academic paper sear
 5. The website verifies the student card VC's hidden signature using zero-knowledge proofs and checks if the Issuer's corresponding public key is included in the trusted university list. If verified, the website grants access; if not, access is denied
 
 <img width="724" alt="CleanShot 2024-11-04 at 22 51 24@2x" src="https://github.com/user-attachments/assets/3fad20a8-454c-4570-990a-b6820441e725">
+
+## VC Format for Issuer Hiding
+
+## Tech stuff and references
+
+## Tech resources we created
 
 
 ## References: 
