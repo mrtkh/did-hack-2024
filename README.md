@@ -106,6 +106,34 @@ In our second demonstration, we show how students can access academic paper sear
 <img width="724" alt="CleanShot 2024-11-04 at 22 51 24@2x" src="https://github.com/user-attachments/assets/3fad20a8-454c-4570-990a-b6820441e725">
 
 ## VC Format for Issuer Hiding
+1. Student ID VC   
+    Mediocre University C issues Student ID VC to User. There are 7 subjects.
+    1. VC type
+    2. university name
+    3. student id
+    4. student name
+    5. student's department
+    6. student's date of birth
+    7. issue date   
+    This VC is signed using the signature protocol for Issuer-Hiding.
+    ![Example of Student ID VC](img/StudentIDVC.png)
+2. Trusted Issuer list VC   
+    Verifier issues Trusted Issuer list VC to User. There are four pieces of information about the Trusted Issuer consisting of three subject.
+    - subject
+        1. issuer name
+        2. issuer's public key
+        3. signature by Verifier
+    - four issuers
+        1. Popular University A
+        2. Popular University B
+        3. Mediocre University C
+        4. Mediocre University D   
+    This VC is signed using ECDSA.
+    ![Example of Trusted Issuer list VC](img/TrustedIssuerListVC.png)
+3. VP   
+    This VP shows that the original VC is Student ID VC and that it is within the expiration date.   
+    We cannot identify who is the Issuer from this VP, but we can see the list of Trusted Issuers who may be the Issuer.
+    ![VP](img/VP.png)
 
 ## Tech stuff and references
 
